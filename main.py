@@ -25,13 +25,12 @@ scissors = '''
 ---.__(___)
 '''
 
-#Write your code below this line 👇
+
 import random
 
-# Gameplay
+
 rps = [rock, paper, scissors]
 
-# Input validating based upon user input
 user_choice = -1
 while user_choice < 0 or user_choice >= 3:
     try:
@@ -45,7 +44,7 @@ npc_choice = random.randint(0,2)
 user_final = rps[user_choice]
 npc_final = rps[npc_choice]
 
-# Determining Outcome
+
 if user_choice == npc_choice:
     print(f'You chose: {user_choice}.\n{user_final}')
     print(f'NPC chose: {npc_choice}. \n{npc_final}')
@@ -74,11 +73,3 @@ elif user_choice == 2 and npc_choice == 1:
     print(f'You chose: {user_choice}.\n{user_final}')
     print(f'NPC chose: {npc_choice}. \n{npc_final}')
     print('You Win!')
-
-
-
-
-# Print to test
-# print(user_choice)
-# print(user_final)
-# print(npc_final)
